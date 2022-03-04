@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#76DF91"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tv_title_dialog"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:textColor="#FF00"
+        android:layout_height="wrap_content"
+        android:text="Bạn có muốn chỉnh sửa công việc không?"
+        android:layout_below="@id/ibtn_cancel"
+        android:textSize="18sp"/>
+    <LinearLayout
+        android:layout_below="@id/tv_title_dialog"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="24dp"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_sua_dialog"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Sửa" />
+        <Button
+            android:id="@+id/btn_xoa_dialog"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Xoá" />
+    </LinearLayout>
+    <ImageButton
+        android:id="@+id/ibtn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_menu_close_clear_cancel"
+        android:layout_alignParentEnd="true"/>
+
+</RelativeLayout>

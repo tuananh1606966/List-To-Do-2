@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThemDoVatActivity">
+
+    <Button
+        android:id="@+id/btn_huy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Huỷ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.739"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_hinh" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Thêm công việc"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#FF00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edt_tendovat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:hint="Nhập tên đồ vật"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/edt_mota"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:hint="Nhập mô tả"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_tendovat" />
+
+    <ImageView
+        android:id="@+id/iv_hinh"
+        android:layout_width="242dp"
+        android:layout_height="242dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_mota"
+        app:srcCompat="@drawable/no_photo" />
+
+    <ImageButton
+        android:id="@+id/ibtn_camera"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toStartOf="@+id/iv_hinh"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_mota"
+        app:srcCompat="@drawable/camera" />
+
+    <ImageButton
+        android:id="@+id/ibtn_folder"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toEndOf="@+id/iv_hinh"
+        app:layout_constraintTop_toBottomOf="@+id/edt_mota"
+        app:srcCompat="@drawable/folder" />
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Thêm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.263"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_hinh" />
+</androidx.constraintlayout.widget.ConstraintLayout>
